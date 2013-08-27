@@ -130,9 +130,10 @@
     .offset2                         { margin-left: 17.127071823204%;  }
     .offset1                         { margin-left: 8.563535911602%;   }
 
-    .show-phone                      { display: none !important;    }
+    .show-tablet                     { display: initial !important; }
     .show-desktop                    { display: none !important;    }
     .hide-tablet                     { display: none !important;    }
+    .hide-desktop                    { display: initial !important; }
   }
 
 
@@ -157,9 +158,10 @@
       margin-left: 0;
     }
 
-    .show-tablet                     { display: none !important;    }
+    .show-phone                      { display: initial !important; }
     .show-desktop                    { display: none !important;    }
     .hide-phone                      { display: none !important;    }
+    .hide-desktop                    { display: initial !important; }
   }
 
 
