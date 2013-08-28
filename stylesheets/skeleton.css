@@ -31,20 +31,20 @@
 /* #Screen (Standard)
 ================================================== */
     .container                       { width: 960px; }
-    [class*="span"]                  { margin-right: 2.127659574468085%; }
+    [class*="span"]                  { margin-right: 2.127659574468%;  }
 
-    .span12                          { width: 100%;                }
-    .span11                          { width: 91.48936170212765%;  }
-    .span10                          { width: 82.97872340425532%;  }
-    .span9                           { width: 74.46808510638297%;  }
-    .span8                           { width: 65.95744680851064%;  }
-    .span7                           { width: 57.44680851063829%;  }
-    .span6                           { width: 48.93617021276595%;  }
-    .span5                           { width: 40.42553191489362%;  }
-    .span4                           { width: 31.914893617021278%; }
-    .span3                           { width: 23.404255319148934%; }
-    .span2                           { width: 14.893617021276595%; }
-    .span1                           { width:  6.382978723404255%; }
+    .span12                          {       width: 100%;              }
+    .span11                          {       width: 91.489361702128%;  }
+    .span10                          {       width: 82.978723404255%;  }
+    .span9                           {       width: 74.468085106383%;  }
+    .span8                           {       width: 65.957446808511%;  }
+    .span7                           {       width: 57.446808510638%;  }
+    .span6                           {       width: 48.936170212766%;  }
+    .span5                           {       width: 40.425531914894%;  }
+    .span4                           {       width: 31.914893617021%;  }
+    .span3                           {       width: 23.404255319149%;  }
+    .span2                           {       width: 14.893617021277%;  }
+    .span1                           {       width:  6.382978723404%;  }
 
     .offset11                        { margin-left: 93.617021276596%;  }
     .offset10                        { margin-left: 85.106382978723%;  }
@@ -52,11 +52,11 @@
     .offset8                         { margin-left: 68.085106382979%;  }
     .offset7                         { margin-left: 59.574468085106%;  }
     .offset6                         { margin-left: 51.063829787234%;  }
-    .offset5                         { margin-left: 42.5531914893620%; }
+    .offset5                         { margin-left: 42.553191489362%;  }
     .offset4                         { margin-left: 34.042553191489%;  }
     .offset3                         { margin-left: 25.531914893617%;  }
     .offset2                         { margin-left: 17.021276595745%;  }
-    .offset1                         { margin-left: 8.510638297872%;   }
+    .offset1                         { margin-left:  8.510638297872%;  }
 
     .show-phone                      { display: none !important;    }
     .show-tablet                     { display: none !important;    }
@@ -67,20 +67,20 @@
 ================================================== */
   @media only screen and (min-width: 1200px) {
     .container                       { width: 1200px; }
-    [class*="span"]                  { margin-right: 2.564102564102564%; }
+    [class*="span"]                  { margin-right: 2.564102564103%; }
 
-    .span12                          { width: 100%;                }
-    .span11                          { width: 91.45299145299145%;  }
-    .span10                          { width: 82.90598290598291%;  }
-    .span9                           { width: 74.35897435897436%;  }
-    .span8                           { width: 65.81196581196582%;  }
-    .span7                           { width: 57.26495726495726%;  }
-    .span6                           { width: 48.717948717948715%; }
-    .span5                           { width: 40.17094017094017%;  }
-    .span4                           { width: 31.623931623931625%; }
-    .span3                           { width: 23.076923076923077%; }
-    .span2                           { width: 14.52991452991453%;  }
-    .span1                           { width:  5.982905982905983%; }
+    .span12                          {       width: 100%;              }
+    .span11                          {       width: 91.452991452991%;  }
+    .span10                          {       width: 82.905982905983%;  }
+    .span9                           {       width: 74.358974358974%;  }
+    .span8                           {       width: 65.811965811966%;  }
+    .span7                           {       width: 57.264957264957%;  }
+    .span6                           {       width: 48.717948717949%;  }
+    .span5                           {       width: 40.170940170940%;  }
+    .span4                           {       width: 31.623931623932%;  }
+    .span3                           {       width: 23.076923076923%;  }
+    .span2                           {       width: 14.529914529915%;  }
+    .span1                           {       width:  5.982905982906%;  }
 
     .offset11                        { margin-left: 94.017094017094%;  }
     .offset10                        { margin-left: 85.470085470086%;  }
@@ -92,7 +92,7 @@
     .offset4                         { margin-left: 34.188034188034%;  }
     .offset3                         { margin-left: 25.641025641026%;  }
     .offset2                         { margin-left: 17.094017094017%;  }
-    .offset1                         { margin-left: 8.547008547009%;   }
+    .offset1                         { margin-left:  8.547008547009%;  }
 }
 
 
@@ -103,20 +103,20 @@
 
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container                       { width: 740px; }
-    [class*="span"]                  { margin-right: 2.7624309392265194%; }
+    [class*="span"]                  { margin-right: 2.762430939227%;  }
 
-    .span12                          { width: 100%;                }
-    .span11                          { width: 91.43646408839778%;  }
-    .span10                          { width: 82.87292817679558%;  }
-    .span9                           { width: 74.30939226519337%;  }
-    .span8                           { width: 65.74585635359117%;  }
-    .span7                           { width: 57.18232044198895%;  }
-    .span6                           { width: 48.61878453038674%;  }
-    .span5                           { width: 40.05524861878453%;  }
-    .span4                           { width: 31.491712707182323%; }
-    .span3                           { width: 22.92817679558011%;  }
-    .span2                           { width: 14.3646408839779%;   }
-    .span1                           { width:  5.801104972375691%; }
+    .span12                          {       width: 100%;              }
+    .span11                          {       width: 91.436464088398%;  }
+    .span10                          {       width: 82.872928176796%;  }
+    .span9                           {       width: 74.309392265193%;  }
+    .span8                           {       width: 65.745856353591%;  }
+    .span7                           {       width: 57.182320441989%;  }
+    .span6                           {       width: 48.618784530387%;  }
+    .span5                           {       width: 40.055248618785%;  }
+    .span4                           {       width: 31.491712707182%;  }
+    .span3                           {       width: 22.928176795580%;  }
+    .span2                           {       width: 14.364640883978%;  }
+    .span1                           {       width:  5.801104972376%;  }
 
     .offset11                        { margin-left: 94.198895027624%;  }
     .offset10                        { margin-left: 85.635359116022%;  }
@@ -128,7 +128,7 @@
     .offset4                         { margin-left: 34.254143646409%;  }
     .offset3                         { margin-left: 25.690607734807%;  }
     .offset2                         { margin-left: 17.127071823204%;  }
-    .offset1                         { margin-left: 8.563535911602%;   }
+    .offset1                         { margin-left:  8.563535911602%;  }
 
     .show-tablet                     { display: initial !important; }
     .show-desktop                    { display: none !important;    }
