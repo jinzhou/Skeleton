@@ -221,9 +221,15 @@
   }
 
   /*
-    For IE 10
-    http://css-tricks.com/snippets/javascript/fix-ie-10-on-windows-phone-8-viewport/
+    Fix safari <select> tag width
   */
-  @-ms-viewport {
-    width: device-width;
+  select {
+    -webkit-appearance: none;
+  }
+
+  /*
+    Fix <a> tag height larger than the size of wrapped img
+  */
+  a {
+    vertical-align:bottom;
   }
