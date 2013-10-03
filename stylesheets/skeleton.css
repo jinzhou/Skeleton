@@ -231,5 +231,5 @@
     Fix <a> tag height larger than the size of wrapped <img> tag
   */
   img {
-    vertical-align:bottom;
+    vertical-align: bottom;
   }
