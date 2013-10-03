@@ -228,8 +228,8 @@
   }
 
   /*
-    Fix <a> tag height larger than the size of wrapped img
+    Fix <a> tag height larger than the size of wrapped <img> tag
   */
-  a {
+  img {
     vertical-align:bottom;
   }
