@@ -137,7 +137,7 @@
   }
 
 
-/*  #Mobile (Portrait)
+/* #Mobile (Portrait)
 ================================================== */
 
   /* Note: Design for a width of 320px */
@@ -221,10 +221,11 @@
   }
 
   /*
-    Fix safari <select> tag width
+    Fix safari <select> tag width, remove <input> tag border radius
   */
-  select {
+  input, select {
     -webkit-appearance: none;
+	border-radius: 0;
   }
 
   /*
