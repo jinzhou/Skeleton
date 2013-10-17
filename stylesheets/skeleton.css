@@ -221,11 +221,23 @@
   }
 
   /*
-    Fix safari <select> tag width, remove <input> tag border radius
+    Fix safari <input> and <textarea> tag border radius
   */
-  input, select {
+  input, textarea {
     -webkit-appearance: none;
     border-radius: 0;
+  }
+
+  /*
+    Fix safari <select> tag width and height without affecting chrome,
+    ** this fix removes all default styling but also removes the dropdown arrow
+    http://stackoverflow.com/questions/16348489/is-there-a-css-hack-for-safari-only-not-chrome
+    http://stackoverflow.com/questions/15623389/dissappearing-arrow-and-styling-on-select-element-in-safari-on-ios
+  */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    ::i-block-chrome, select {
+      -webkit-appearance: none;
+    }
   }
 
   /*
