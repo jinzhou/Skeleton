@@ -223,7 +223,7 @@
   /*
     Fix safari <input> and <textarea> tag border radius
   */
-  input, textarea {
+  input:not([type="radio"]):not([type="checkbox"]), textarea {
     -webkit-appearance: none;
     border-radius: 0;
   }
