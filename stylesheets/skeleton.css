@@ -22,7 +22,30 @@
     .container                       { margin: 0 auto; }
     .row                             { width: 100%; }
     [class*="span"]                  { display: block; float: left; width: 100%; min-height: 1px; }
-    [class*="span"]:last-child       { margin-right: 0; }
+    .span12                          {       width: 100%;              }
+    .span11                          {       width: 91.666666666666%;  }
+    .span10                          {       width: 83.333333333333%;  }
+    .span9                           {       width: 75%;  }
+    .span8                           {       width: 66.666666666666%;  }
+    .span7                           {       width: 58.333333333333%;  }
+    .span6                           {       width: 50%;  }
+    .span5                           {       width: 41.666666666666%;  }
+    .span4                           {       width: 33.333333333333%;  }
+    .span3                           {       width: 25%;  }
+    .span2                           {       width: 16.666666666666%;  }
+    .span1                           {       width:  8.333333333333%;  }
+
+    .offset11                        { margin-left: 91.666666666666%;  }
+    .offset10                        { margin-left: 83.333333333333%;  }
+    .offset9                         { margin-left: 75%;  }
+    .offset8                         { margin-left: 66.666666666666%;  }
+    .offset7                         { margin-left: 58.333333333333%;  }
+    .offset6                         { margin-left: 50%;  }
+    .offset5                         { margin-left: 41.666666666666%;  }
+    .offset4                         { margin-left: 33.333333333333%;  }
+    .offset3                         { margin-left: 25%;  }
+    .offset2                         { margin-left: 16.666666666666%;  }
+    .offset1                         { margin-left:  8.333333333333%;  }
 
     .show                            { display: block; }
     .hide                            { display: none;  }
@@ -31,32 +54,6 @@
 /* #Screen (Standard)
 ================================================== */
     .container                       { width: 960px; }
-    [class*="span"]                  { margin-right: 2.127659574468%;  }
-
-    .span12                          {       width: 100%;              }
-    .span11                          {       width: 91.489361702128%;  }
-    .span10                          {       width: 82.978723404255%;  }
-    .span9                           {       width: 74.468085106383%;  }
-    .span8                           {       width: 65.957446808511%;  }
-    .span7                           {       width: 57.446808510638%;  }
-    .span6                           {       width: 48.936170212766%;  }
-    .span5                           {       width: 40.425531914894%;  }
-    .span4                           {       width: 31.914893617021%;  }
-    .span3                           {       width: 23.404255319149%;  }
-    .span2                           {       width: 14.893617021277%;  }
-    .span1                           {       width:  6.382978723404%;  }
-
-    .offset11                        { margin-left: 93.617021276596%;  }
-    .offset10                        { margin-left: 85.106382978723%;  }
-    .offset9                         { margin-left: 76.595744680851%;  }
-    .offset8                         { margin-left: 68.085106382979%;  }
-    .offset7                         { margin-left: 59.574468085106%;  }
-    .offset6                         { margin-left: 51.063829787234%;  }
-    .offset5                         { margin-left: 42.553191489362%;  }
-    .offset4                         { margin-left: 34.042553191489%;  }
-    .offset3                         { margin-left: 25.531914893617%;  }
-    .offset2                         { margin-left: 17.021276595745%;  }
-    .offset1                         { margin-left:  8.510638297872%;  }
 
     .show-phone                      { display: none !important;    }
     .show-tablet                     { display: none !important;    }
@@ -67,33 +64,7 @@
 ================================================== */
   @media only screen and (min-width: 1200px) {
     .container                       { width: 1200px; }
-    [class*="span"]                  { margin-right: 2.564102564103%; }
-
-    .span12                          {       width: 100%;              }
-    .span11                          {       width: 91.452991452991%;  }
-    .span10                          {       width: 82.905982905983%;  }
-    .span9                           {       width: 74.358974358974%;  }
-    .span8                           {       width: 65.811965811966%;  }
-    .span7                           {       width: 57.264957264957%;  }
-    .span6                           {       width: 48.717948717949%;  }
-    .span5                           {       width: 40.170940170940%;  }
-    .span4                           {       width: 31.623931623932%;  }
-    .span3                           {       width: 23.076923076923%;  }
-    .span2                           {       width: 14.529914529915%;  }
-    .span1                           {       width:  5.982905982906%;  }
-
-    .offset11                        { margin-left: 94.017094017094%;  }
-    .offset10                        { margin-left: 85.470085470086%;  }
-    .offset9                         { margin-left: 76.923076923077%;  }
-    .offset8                         { margin-left: 68.376068376068%;  }
-    .offset7                         { margin-left: 59.829059829060%;  }
-    .offset6                         { margin-left: 51.282051282051%;  }
-    .offset5                         { margin-left: 42.735042735043%;  }
-    .offset4                         { margin-left: 34.188034188034%;  }
-    .offset3                         { margin-left: 25.641025641026%;  }
-    .offset2                         { margin-left: 17.094017094017%;  }
-    .offset1                         { margin-left:  8.547008547009%;  }
-}
+  }
 
 
 /* #Tablet (Portrait)
@@ -103,32 +74,6 @@
 
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container                       { width: 740px; }
-    [class*="span"]                  { margin-right: 2.762430939227%;  }
-
-    .span12                          {       width: 100%;              }
-    .span11                          {       width: 91.436464088398%;  }
-    .span10                          {       width: 82.872928176796%;  }
-    .span9                           {       width: 74.309392265193%;  }
-    .span8                           {       width: 65.745856353591%;  }
-    .span7                           {       width: 57.182320441989%;  }
-    .span6                           {       width: 48.618784530387%;  }
-    .span5                           {       width: 40.055248618785%;  }
-    .span4                           {       width: 31.491712707182%;  }
-    .span3                           {       width: 22.928176795580%;  }
-    .span2                           {       width: 14.364640883978%;  }
-    .span1                           {       width:  5.801104972376%;  }
-
-    .offset11                        { margin-left: 94.198895027624%;  }
-    .offset10                        { margin-left: 85.635359116022%;  }
-    .offset9                         { margin-left: 77.071823204420%;  }
-    .offset8                         { margin-left: 68.508287292818%;  }
-    .offset7                         { margin-left: 59.944751381215%;  }
-    .offset6                         { margin-left: 51.381215469613%;  }
-    .offset5                         { margin-left: 42.817679558011%;  }
-    .offset4                         { margin-left: 34.254143646409%;  }
-    .offset3                         { margin-left: 25.690607734807%;  }
-    .offset2                         { margin-left: 17.127071823204%;  }
-    .offset1                         { margin-left:  8.563535911602%;  }
 
     .show-tablet                     { display: initial !important; }
     .show-desktop                    { display: none !important;    }
@@ -150,7 +95,6 @@
     [class*="span"] {
       float: none;
       width: 100%;
-      margin-right: 0;
       margin-bottom: 10px;
     }
 
