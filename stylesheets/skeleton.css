@@ -185,10 +185,12 @@
   }
 
   /*
-    Fix <a> tag height larger than the size of wrapped <img> tag
+    Fix <a> tag height larger than the size of wrapped <img> tag,
+    also removes the border of image by default
   */
   img {
     vertical-align: bottom;
+    border: none;
   }
 
   /*
@@ -207,4 +209,9 @@
   ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+  }
+
+  /* Removes dotted border when focus */
+  *:focus {
+    outline: none;
   }
