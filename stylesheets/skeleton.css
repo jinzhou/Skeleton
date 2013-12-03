@@ -155,7 +155,7 @@
     http://css-tricks.com/box-sizing/
     http://css-tricks.com/transparent-borders-with-background-clip/
   */
-  [class*="span"] {
+  *, *:before, *:after {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
