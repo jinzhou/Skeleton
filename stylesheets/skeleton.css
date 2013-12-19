@@ -21,7 +21,7 @@
 ================================================== */
     .container                       { margin: 0 auto; }
     .row                             { width: 100%; }
-    [class*="span"]                  { display: block; float: left; width: 100%; min-height: 1px; }
+    [class*="span"]                  { display: block; float: left; min-height: 1px; }
     .span12                          {       width: 100%;              }
     .span11                          {       width: 91.666666666666%;  }
     .span10                          {       width: 83.333333333333%;  }
@@ -88,19 +88,11 @@
   /* Note: Design for a width of 320px */
 
   @media only screen and (max-width: 767px) {
-    .container {
-      width: 300px;
-    }
+    .container                       { width: 300px; }
 
-    [class*="span"]:not(.nowrap) {
-      float: none;
-      width: 100%;
-      margin-bottom: 10px;
-    }
+    [class*="span"]:not(.nowrap)     { width: 100%; float: none; margin-bottom: 10px; }
 
-    [class*="offset"] {
-      margin-left: 0;
-    }
+    [class*="offset"]:not(.nowrap)   { margin-left: 0; }
 
     .show-phone                      { display: initial !important; }
     .show-desktop                    { display: none !important;    }
@@ -115,9 +107,7 @@
   /* Note: Design for a width of 480px */
 
   @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .container {
-      width: 456px;
-    }
+    .container                       { width: 456px; }
   }
 
 
@@ -186,11 +176,14 @@
 
   /*
     Fix <a> tag height larger than the size of wrapped <img> tag,
-    also removes the border of image by default
+    removes the border of image by default,
+    also fixes awful look when resizing image in IE
+    http://css-tricks.com/ie-fix-bicubic-scaling-for-images/
   */
   img {
     vertical-align: bottom;
     border: none;
+    -ms-interpolation-mode: bicubic;
   }
 
   /*
@@ -213,5 +206,5 @@
 
   /* Removes dotted border when focus */
   *:focus {
-    outline: none;
+    outline: none !important;
   }
