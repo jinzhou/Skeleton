@@ -22,6 +22,7 @@
     .container                       { margin: 0 auto; }
     .row                             { width: 100%; }
     [class*="span"]                  { display: block; float: left; min-height: 1px; }
+    form [class*="span"]             { padding: 1%; }
     .span12                          {       width: 100%;              }
     .span11                          {       width: 91.666666666666%;  }
     .span10                          {       width: 83.333333333333%;  }
@@ -75,6 +76,31 @@
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     .container                       { width: 740px; }
 
+    .tablet-span12                   {       width: 100%;              }
+    .tablet-span11                   {       width: 91.666666666666%;  }
+    .tablet-span10                   {       width: 83.333333333333%;  }
+    .tablet-span9                    {       width: 75%;  }
+    .tablet-span8                    {       width: 66.666666666666%;  }
+    .tablet-span7                    {       width: 58.333333333333%;  }
+    .tablet-span6                    {       width: 50%;  }
+    .tablet-span5                    {       width: 41.666666666666%;  }
+    .tablet-span4                    {       width: 33.333333333333%;  }
+    .tablet-span3                    {       width: 25%;  }
+    .tablet-span2                    {       width: 16.666666666666%;  }
+    .tablet-span1                    {       width:  8.333333333333%;  }
+
+    .tablet-offset11                 { margin-left: 91.666666666666%;  }
+    .tablet-offset10                 { margin-left: 83.333333333333%;  }
+    .tablet-offset9                  { margin-left: 75%;  }
+    .tablet-offset8                  { margin-left: 66.666666666666%;  }
+    .tablet-offset7                  { margin-left: 58.333333333333%;  }
+    .tablet-offset6                  { margin-left: 50%;  }
+    .tablet-offset5                  { margin-left: 41.666666666666%;  }
+    .tablet-offset4                  { margin-left: 33.333333333333%;  }
+    .tablet-offset3                  { margin-left: 25%;  }
+    .tablet-offset2                  { margin-left: 16.666666666666%;  }
+    .tablet-offset1                  { margin-left:  8.333333333333%;  }
+
     .show-tablet                     { display: initial !important; }
     .show-desktop                    { display: none !important;    }
     .hide-tablet                     { display: none !important;    }
@@ -90,9 +116,33 @@
   @media only screen and (max-width: 767px) {
     .container                       { width: 300px; }
 
-    [class*="span"]:not(.nowrap)     { width: 100%; float: none; margin-bottom: 10px; }
+    [class*="span"]                  { float: none; width: 100%; margin-bottom: 10px; }
+    [class*="phone-"]                { float: left; }
+    .phone-span12                    {       width: 100%;              }
+    .phone-span11                    {       width: 91.666666666666%;  }
+    .phone-span10                    {       width: 83.333333333333%;  }
+    .phone-span9                     {       width: 75%;  }
+    .phone-span8                     {       width: 66.666666666666%;  }
+    .phone-span7                     {       width: 58.333333333333%;  }
+    .phone-span6                     {       width: 50%;  }
+    .phone-span5                     {       width: 41.666666666666%;  }
+    .phone-span4                     {       width: 33.333333333333%;  }
+    .phone-span3                     {       width: 25%;  }
+    .phone-span2                     {       width: 16.666666666666%;  }
+    .phone-span1                     {       width:  8.333333333333%;  }
 
-    [class*="offset"]:not(.nowrap)   { margin-left: 0; }
+    [class*="offset"]                { margin-left: 0; }
+    .phone-offset11                  { margin-left: 91.666666666666%;  }
+    .phone-offset10                  { margin-left: 83.333333333333%;  }
+    .phone-offset9                   { margin-left: 75%;  }
+    .phone-offset8                   { margin-left: 66.666666666666%;  }
+    .phone-offset7                   { margin-left: 58.333333333333%;  }
+    .phone-offset6                   { margin-left: 50%;  }
+    .phone-offset5                   { margin-left: 41.666666666666%;  }
+    .phone-offset4                   { margin-left: 33.333333333333%;  }
+    .phone-offset3                   { margin-left: 25%;  }
+    .phone-offset2                   { margin-left: 16.666666666666%;  }
+    .phone-offset1                   { margin-left:  8.333333333333%;  }
 
     .show-phone                      { display: initial !important; }
     .show-desktop                    { display: none !important;    }
