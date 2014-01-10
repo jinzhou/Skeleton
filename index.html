@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="skeleton.css" />
+  <link rel="stylesheet" href="skeleton3.css" />
   <style>
   .row {
     margin: 10px 0;
   }
   [class*="span"] {
-    background: #DDD;
-    border-radius: 3px;
+    background: #CCC;
+    border-radius: 8px;
     line-height: 40px;
     min-height: 40px;
     text-align: center;
@@ -24,6 +24,9 @@
   [class*="span"] [class*="span"] [class*="span"] {
     background: #AAA;
   }
+  input:not([type="radio"]):not([type="checkbox"]), select, textarea {
+    width: 100%;
+  }
   </style>
 </head>
 <body>
@@ -31,88 +34,88 @@
   <h1>Show/Hide toggle</h1>
   <div class="row">
     <div class="span6">
-      <span class="show-phone">show-phone (visible on phone only)</span>
+      <span class="show-phone">show-phone</span>
     </div>
     <div class="span6">
-      <span class="hide-phone">hide-phone (visible on desktop/tablet)</span>
-    </div>
-  </div>
-  <div class="row">
-    <div class="span6">
-      <span class="show-tablet">show-tablet (visible on tablet only)</span>
-    </div>
-    <div class="span6">
-      <span class="hide-tablet">hide-tablet (visible on desktop/phone)</span>
+      <span class="hide-phone">hide-phone</span>
     </div>
   </div>
   <div class="row">
     <div class="span6">
-      <span class="show-desktop">show-desktop (visible on desktop only)</span>
+      <span class="show-tablet">show-tablet</span>
     </div>
     <div class="span6">
-      <span class="hide-desktop">hide-desktop (visible on tablet/phone)</span>
+      <span class="hide-tablet">hide-tablet</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span6">
+      <span class="show-desktop">show-desktop</span>
+    </div>
+    <div class="span6">
+      <span class="hide-desktop">hide-desktop</span>
     </div>
   </div>
   
   <h1>Fluid grid system</h1>
   <div class="row">
-    <div class="span1">1</div>
-    <div class="span1">1</div>
-    <div class="span1">1</div>
-    <div class="span1">1</div>
-    <div class="span1">1</div>
-    <div class="span1">1</div>
-    <div class="span1">1</div>
-    <div class="span1">1</div>
-    <div class="span1">1</div>
-    <div class="span1">1</div>
-    <div class="span1">1</div>
-    <div class="span1">1</div>
+    <div class="span12 tablet-span9 tablet-offset3 phone-span6 phone-offset6">span12 tablet-span9 phone-span6</div>
   </div>
   <div class="row">
-    <div class="span2">2</div>
-    <div class="span2">2</div>
-    <div class="span2">2</div>
-    <div class="span2">2</div>
-    <div class="span2">2</div>
-    <div class="span2">2</div>
+    <div class="span11 offset1">span11 offset1</div>
   </div>
   <div class="row">
-    <div class="span3">3</div>
-    <div class="span3">3</div>
-    <div class="span3">3</div>
-    <div class="span3">3</div>
+    <div class="span10 offset2">span10 offset2</div>
   </div>
   <div class="row">
-    <div class="span4">4</div>
-    <div class="span4">4</div>
-    <div class="span4">4</div>
+    <div class="span9 offset3">span9 offset3</div>
   </div>
   <div class="row">
-    <div class="span6">6</div>
-    <div class="span6">6</div>
+    <div class="span8 offset4">span8 offset4</div>
   </div>
   <div class="row">
-    <div class="span7 offset5">7 offset5</div>
+    <div class="span7 offset5">span7 offset5</div>
   </div>
   <div class="row">
-    <div class="span8 offset4">8 offset4</div>
+    <div class="span6 tablet-span4">span6</div>
+    <div class="span6">span6</div>
   </div>
   <div class="row">
-    <div class="span9 offset3">9 offset3</div>
+    <div class="span4">span4</div>
+    <div class="span4">span4</div>
+    <div class="span4">span4</div>
   </div>
   <div class="row">
-    <div class="span10 offset2">10 offset2</div>
+    <div class="span3">span3</div>
+    <div class="span3">span3</div>
+    <div class="span3">span3</div>
+    <div class="span3">span3</div>
   </div>
   <div class="row">
-    <div class="span11 offset1">11 offset1</div>
+    <div class="span2">span2</div>
+    <div class="span2">span2</div>
+    <div class="span2">span2</div>
+    <div class="span2">span2</div>
+    <div class="span2">span2</div>
+    <div class="span2">span2</div>
   </div>
   <div class="row">
-    <div class="span12">12</div>
+    <div class="span1 phone-span1">span1</div>
+    <div class="span1 phone-span1 phone-offset3">span1</div>
+    <div class="span1">span1</div>
+    <div class="span1">span1</div>
+    <div class="span1">span1</div>
+    <div class="span1">span1</div>
+    <div class="span1">span1</div>
+    <div class="span1">span1</div>
+    <div class="span1">span1</div>
+    <div class="span1">span1</div>
+    <div class="span1">span1</div>
+    <div class="span1">span1</div>
   </div>
   <div class="row">
-    <div class="span1 offset5">1 offset5</div>
-    <div class="span5 offset1">5 offset1</div>
+    <div class="span2 offset4">span2 offset4</div>
+    <div class="span5 offset1">span5 offset1</div>
   </div>
   
   <h1>Nesting</h1>
@@ -167,6 +170,69 @@
       </div>
     </div>
   </div>
+  
+  <h1>Form</h1>
+  <form>
+    <div class="row">
+      <div class="span4">
+        <input type="text" />
+      </div>
+      <div class="span4">
+        <input type="text" />
+      </div>
+      <div class="span4">
+        <input type="text" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="span6">
+        <div class="row">
+          <div class="span6">
+            <input type="text" />
+          </div>
+          <div class="span6">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <select>
+              <option>1</option>
+              <option>2</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <textarea></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="span6">
+        <div class="row">
+          <div class="span6">
+            <input type="text" />
+          </div>
+          <div class="span6">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <select>
+              <option>1</option>
+              <option>2</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <textarea></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
 </div>
 </body>
 </html>
