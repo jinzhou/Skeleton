@@ -22,7 +22,7 @@
     .container                       { margin: 0 auto; }
     .row                             { width: 100%; }
     [class*="span"]                  { display: block; float: left; min-height: 1px; }
-    form [class*="span"]             { padding: 1%; }
+
     .span12                          {       width: 100%;              }
     .span11                          {       width: 91.666666666666%;  }
     .span10                          {       width: 83.333333333333%;  }
