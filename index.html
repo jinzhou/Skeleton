@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="stylesheets/skeleton.css" />
+  <link rel="stylesheet" href="stylesheet/skeleton.css" />
   <style>
   .row {
     margin: 10px 0;
@@ -24,8 +24,11 @@
   [class*="span"] [class*="span"] [class*="span"] {
     background: #AAA;
   }
-  input:not([type="radio"]):not([type="checkbox"]), select, textarea {
+  input, select, textarea {
     width: 100%;
+  }
+  input[type="radio"], input[type="checkbox"] {
+    width: auto;
   }
   form [class*="span"] {
     padding: 1%;
@@ -174,6 +177,24 @@
           4 (level 2)
         </div>
       </div>
+    </div>
+  </div>
+  
+  <h1>Re-ordering</h1>
+  <div class="row">
+    <div class="span8">
+      A
+    </div>
+    <div class="span4">
+      B
+    </div>
+  </div>
+  <div class="row">
+    <div class="span8 push4 tablet-push0">
+      A
+    </div>
+    <div class="span4 pull8 tablet-pull0">
+      B
     </div>
   </div>
   
