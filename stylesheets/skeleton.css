@@ -21,7 +21,7 @@
 ================================================== */
     .container                       { margin: 0 auto; }
     .row                             { width: 100%; }
-    [class*="span"]                  { display: block; float: left; min-height: 1px; position: relative; overflow: auto; }
+    [class*="span"]                  { display: block; float: left; min-height: 1px; position: relative; }
 
     .span12                          {       width: 100%;            }
     .span11                          {       width: 91.6666666666%;  }
