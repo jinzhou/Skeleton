@@ -290,14 +290,21 @@
   }
 
   /*
-    Fix <a> tag height larger than the size of wrapped <img> tag,
-    removes the border of image by default,
+    Fix <a> tag height larger than the size of wrapped <img> tag
+  */
+  a {
+    display: inline-block;
+  }
+
+  /*
+    Removes the border of image by default,
+    set vertical alignment to middle instead of baseline,
     also fixes awful look when resizing image in IE
     http://css-tricks.com/ie-fix-bicubic-scaling-for-images/
   */
   img {
-    vertical-align: bottom;
     border: none;
+    vertical-align: middle;
     -ms-interpolation-mode: bicubic;
   }
 
@@ -332,4 +339,21 @@
   */
   html {
     -webkit-text-size-adjust: 100%;
+  }
+
+  /*
+    Fix FireFox's wrong MediaQuery breakpoint calculation (considered width of scrollbar),
+    minor side effect: scrollbar will always visible
+    http://iamkeir.com/post/26647025450/firefox-media-query-breakpoints-wtf
+  */
+  @-moz-document url-prefix() {
+    html {
+      overflow: hidden;
+      height: 100%;
+    }
+    body {
+      position: relative;
+      overflow-y: scroll;
+      height: 100%;
+    }
   }
