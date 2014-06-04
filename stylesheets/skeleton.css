@@ -166,8 +166,7 @@
 
   @media only screen and (max-width: 767px) {
     .container                       { width: 300px; }
-    [class*="span"]                  { clear: both; float: none; width: 100%; margin-bottom: 10px; }
-    [class*="phone-"]                { clear: none; float: left; }
+    [class*="span"]                  { width: 100%; }
 
     .phone-span12                    {       width: 100%;            }
     .phone-span11                    {       width: 91.6666666666%;  }
