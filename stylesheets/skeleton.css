@@ -8,19 +8,19 @@
 
 /* Table of Contents
 ==================================================
-  #Base Setup
-  #Screen (Standard)
-  #Screen (Widescreen)
-  #Tablet (Portrait)
-  #Mobile (Portrait)
-  #Mobile (Landscape)
+  #Desktop Setup
+  #Tablet Setup
+  #Mobile Setup
+  #Screen Resolutions
   #Fix    (Clearfix, borderfix etc) */
 
 
-/* #Base Setup
+/* #Desktop Setup
 ================================================== */
     .container                       { margin: 0 auto; }
     .row                             { width: 100%; }
+    .fluid-width                     { width: 100%; max-height: 100%; height: auto; }
+    .fluid-height                    { height: 100%; max-width: 100%; width: auto; }
     [class*="span"]                  { display: block; float: left; min-height: 1px; position: relative; }
 
     .span12                          {       width: 100%;            }
@@ -75,34 +75,18 @@
     .show                            { display: block; }
     .hide                            { display: none;  }
 
-    .fluid-width                     { width: 100%; max-height: 100%; height: auto; }
-    .fluid-height                    { height: 100%; max-width: 100%; width: auto; }
-
-
-/* #Screen (Standard)
-================================================== */
-    .container                       { width: 960px; }
-
     .show-phone                      { display: none !important;    }
     .show-tablet                     { display: none !important;    }
     .hide-desktop                    { display: none !important;    }
 
 
-/* #Screen (Widescreen)
-================================================== */
-  @media only screen and (min-width: 1200px) {
-    .container                       { width: 1200px; }
-  }
-
-
-/* #Tablet (Portrait)
+/* #Tablet Setup
 ================================================== */
 
-  /* Note: Design for a width of 768px */
+  /* Note: iPhone7 width is 667px and considered as tablet
+     and iPad width is 1024px and considered as desktop */
 
-  @media only screen and (min-width: 768px) and (max-width: 959px) {
-    .container                       { width: 740px; }
-
+  @media only screen and (min-width: 667px) and (max-width: 1023px) {
     .tablet-span12                   {       width: 100%;            }
     .tablet-span11                   {       width: 91.6666666666%;  }
     .tablet-span10                   {       width: 83.3333333333%;  }
@@ -162,13 +146,9 @@
   }
 
 
-/* #Mobile (Portrait)
+/* #Mobile Setup
 ================================================== */
-
-  /* Note: Design for a width of 320px */
-
-  @media only screen and (max-width: 767px) {
-    .container                       { width: 300px; }
+  @media only screen and (max-width: 666px) {
     [class*="span"]                  { width: 100%; }
 
     .phone-span12                    {       width: 100%;            }
@@ -230,15 +210,17 @@
   }
 
 
-/* #Mobile (Landscape)
+  /* #Screen Resolutions
 ================================================== */
+    .container                       { width: 960px; } /* Standard */
 
-  /* Note: Design for a width of 480px */
-
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .container                       { width: 456px; }
+  @media only screen and (min-width: 1280px) {
+    .container                       { width: 1200px; } /* Widescreen */
   }
 
+  @media only screen and (max-width: 1023px) {
+    .container                       { width: 100%; } /* Tablet & Mobile */
+  }
 
 /* #Fix
 ================================================== */
