@@ -83,10 +83,7 @@
 /* #Tablet Setup
 ================================================== */
 
-  /* Note: iPhone7 width is 667px and considered as tablet
-     and iPad width is 1024px and considered as desktop */
-
-  @media only screen and (min-width: 667px) and (max-width: 1023px) {
+  @media only screen and (min-width: 600px) and (max-width: 1023px) {
     .tablet-span12                   {       width: 100%;            }
     .tablet-span11                   {       width: 91.6666666666%;  }
     .tablet-span10                   {       width: 83.3333333333%;  }
