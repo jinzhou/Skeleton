@@ -1,0 +1,9 @@
+body {
+   font-size: 16px;
+}
+.demo .row .col {
+   background-color: #eee;
+}
+.demo .row .col:nth-child(even) {
+   background-color: #ddd;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "flexgrid",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "serve": "http-server"
+  },
+  "keywords": [],
+  "author": "zhoujin723@gmail.com",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  },
+  "dependencies": {
+    "less": "^2.7.3"
+  }
+}

@@ -1,334 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="stylesheets/skeleton.css" />
-  <style>
-  .row {
-    margin: 10px 0;
-  }
-  [class*="span"] {
-    background: #CCC;
-    border-radius: 8px;
-    line-height: 40px;
-    min-height: 40px;
-    text-align: center;
-  }
-  [class*="span"]:hover {
-    background: #888 !important;
-    color: #FFF !important;
-    cursor: pointer;
-  }
-  [class*="span"] [class*="span"] {
-    background: #CCC;
-  }
-  [class*="span"] [class*="span"] [class*="span"] {
-    background: #AAA;
-  }
-  input, select, textarea {
-    width: 100%;
-  }
-  input[type="radio"], input[type="checkbox"] {
-    width: auto;
-  }
-  form [class*="span"] {
-    padding: 1%;
-  }
-  form [class*="span"] [class*="span"] {
-    padding: 0;
-  }
-  </style>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Title</title>
+   <link rel="stylesheet/less" href="./flexgrid.less"/>
+   <link rel="stylesheet" href="./demo.css"/>
+   <script src="./node_modules/less/dist/less.min.js"></script>
 </head>
-<body>
-<div class="container">
-  <h1>Show/Hide toggle</h1>
-  <div class="row">
-    <div class="span6">
-      <span class="show-phone">show-phone</span>
-    </div>
-    <div class="span6">
-      <span class="hide-phone">hide-phone</span>
-    </div>
-  </div>
-  <div class="row">
-    <div class="span6">
-      <span class="show-tablet">show-tablet</span>
-    </div>
-    <div class="span6">
-      <span class="hide-tablet">hide-tablet</span>
-    </div>
-  </div>
-  <div class="row">
-    <div class="span6">
-      <span class="show-desktop">show-desktop</span>
-    </div>
-    <div class="span6">
-      <span class="hide-desktop">hide-desktop</span>
-    </div>
-  </div>
-  
-  <h1>Fluid grid system</h1>
-  <div class="row">
-    <div class="span12 tablet-span9 tablet-offset3 phone-span6 phone-offset6">span12 tablet-span9(offset3) phone-span6(offset6)</div>
-  </div>
-  <div class="row">
-    <div class="span11 offset1">span11(offset1)</div>
-  </div>
-  <div class="row">
-    <div class="span10 offset2">span10(offset2)</div>
-  </div>
-  <div class="row">
-    <div class="span9 offset3">span9(offset3)</div>
-  </div>
-  <div class="row">
-    <div class="span8 offset4">span8(offset4)</div>
-  </div>
-  <div class="row">
-    <div class="span7 offset5">span7(offset5)</div>
-  </div>
-  <div class="row">
-    <div class="span6 tablet-span4">span6</div>
-    <div class="span6">span6</div>
-  </div>
-  <div class="row">
-    <div class="span4">span4</div>
-    <div class="span4">span4</div>
-    <div class="span4">span4</div>
-  </div>
-  <div class="row">
-    <div class="span3">span3</div>
-    <div class="span3">span3</div>
-    <div class="span3">span3</div>
-    <div class="span3">span3</div>
-  </div>
-  <div class="row">
-    <div class="span2">span2</div>
-    <div class="span2">span2</div>
-    <div class="span2">span2</div>
-    <div class="span2">span2</div>
-    <div class="span2">span2</div>
-    <div class="span2">span2</div>
-  </div>
-  <div class="row">
-    <div class="span1 phone-span1">span1</div>
-    <div class="span1 phone-span1 phone-offset3">span1</div>
-    <div class="span1">span1</div>
-    <div class="span1">span1</div>
-    <div class="span1">span1</div>
-    <div class="span1">span1</div>
-    <div class="span1">span1</div>
-    <div class="span1">span1</div>
-    <div class="span1">span1</div>
-    <div class="span1">span1</div>
-    <div class="span1">span1</div>
-    <div class="span1">span1</div>
-  </div>
-  <div class="row">
-    <div class="span2 offset4">span2(offset4)</div>
-    <div class="span5 offset1">span5(offset1)</div>
-  </div>
-  
-  <h1>Nesting</h1>
-  <div class="row">
-    <div class="span12">
-      12 (level 1)
-      <div class="row">
-        <div class="span8">
-          8 (level 2)
-          <div class="row">
-            <div class="span12">
-              12 (level 3)
-            </div>
-          </div>
-          <div class="row">
-            <div class="span6">
-              6 (level 3)
-            </div>
-            <div class="span6">
-              6 (level 3)
-            </div>
-          </div>
-          <div class="row">
-            <div class="span4">
-              4 (level 3)
-            </div>
-            <div class="span4">
-              4 (level 3)
-            </div>
-            <div class="span4">
-              4 (level 3)
-            </div>
-          </div>
-          <div class="row">
-            <div class="span3">
-              3 (level 3)
-            </div>
-            <div class="span3">
-              3 (level 3)
-            </div>
-            <div class="span3">
-              3 (level 3)
-            </div>
-            <div class="span3">
-              3 (level 3)
-            </div>
-          </div>
-        </div>
-        <div class="span4">
-          4 (level 2)
-        </div>
+<body class="demo">
+   <div class="row">
+      <div class="col-4 col">col-4 col</div>
+      <div class="col-4 col">col-4 col</div>
+      <div class="col-4 col">col-4 col</div>
+   </div>
+   <div class="row">
+      <div class="col-3 col">col-3 col</div>
+      <div class="col-9 col">col-9 col</div>
+   </div>
+   <div class="row">
+      <div class="sm-6 md-8 lg-10 col">sm-6 md-8 lg-10 col</div>
+      <div class="sm-6 md-4 lg-2 col">sm-6 md-4 lg-2 col</div>
+   </div>
+   <div class="row">
+      <div class="sm-5 col">sm-5 col</div>
+      <div class="col-fill col">col-fill col</div>
+      <div class="col-fill col">col-fill col</div>
+   </div>
+   <div class="row">
+      <div class="sm-4 col">Aligned</div>
+      <div class="sm-4 col">Left (default)</div>
+   </div>
+   <div class="row flex-right">
+      <div class="sm-4 col">Aligned</div>
+      <div class="sm-4 col">Right (flex-right)</div>
+   </div>
+   <div class="row flex-center">
+      <div class="sm-4 col">Aligned</div>
+      <div class="sm-4 col">Center (flex-center)</div>
+   </div>
+   <div class="row flex-edges">
+      <div class="sm-4 col">Aligned</div>
+      <div class="sm-4 col">to edges (flex-edges)</div>
+   </div>
+   <div class="row flex-spaces">
+      <div class="sm-4 col">Aligned</div>
+      <div class="sm-4 col">to be evenly spaced (flex-spaces)</div>
+   </div>
+   <div class="row flex-top">
+      <div class="sm-6 col">Aligned top</div>
+      <div class="sm-6 col">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus
+         erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
       </div>
-    </div>
-  </div>
-  
-  <h1>Re-ordering</h1>
-  <div class="row">
-    <div class="span8">
-      A
-    </div>
-    <div class="span4">
-      B
-    </div>
-  </div>
-  <div class="row">
-    <div class="span8 push4 tablet-push0">
-      A
-    </div>
-    <div class="span4 pull8 tablet-pull0">
-      B
-    </div>
-  </div>
-  
-  <h1>Form</h1>
-  <form>
-    <div class="row">
-      <div class="span4">
-        <input type="text" />
+   </div>
+   <div class="row flex-middle">
+      <div class="sm-6 col">Aligned middle</div>
+      <div class="sm-6 col">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus
+         erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
       </div>
-      <div class="span4">
-        <input type="text" />
+   </div>
+   <div class="row flex-bottom">
+      <div class="sm-6 col">Aligned bottom</div>
+      <div class="sm-6 col">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus
+         erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
       </div>
-      <div class="span4">
-        <input type="text" />
+   </div>
+   <div class="row">
+      <div class="sm-3 col align-bottom">Align bottom</div>
+      <div class="sm-3 col align-middle">Align middle</div>
+      <div class="sm-3 col align-top">Align top</div>
+      <div class="sm-3 col">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem lectus, lobortis a nibh non, luctus luctus
+         erat posuere. Curabitur ac turpis aliquam, malesuada elit suscipit, blandit dolor.
       </div>
-    </div>
-    <div class="row">
-      <div class="span6">
-        <div class="row">
-          <div class="span12">
-            <input type="text" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="span12">
-            <select>
-              <option>1</option>
-              <option>2</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="span12">
-            <textarea rows="7"></textarea>
-          </div>
-        </div>
-      </div>
-      <div class="span6">
-        <div class="row">
-          <div class="span6">
-            <input type="text" />
-          </div>
-          <div class="span6">
-            <input type="text" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="span4">
-            <input type="text" />
-          </div>
-          <div class="span4">
-            <input type="text" />
-          </div>
-          <div class="span4">
-            <input type="text" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="span3">
-            <input type="text" />
-          </div>
-          <div class="span3">
-            <input type="text" />
-          </div>
-          <div class="span3">
-            <input type="text" />
-          </div>
-          <div class="span3">
-            <input type="text" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="span2">
-            <input type="text" />
-          </div>
-          <div class="span2">
-            <input type="text" />
-          </div>
-          <div class="span2">
-            <input type="text" />
-          </div>
-          <div class="span2">
-            <input type="text" />
-          </div>
-          <div class="span2">
-            <input type="text" />
-          </div>
-          <div class="span2">
-            <input type="text" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="span1">
-            <input type="text" />
-          </div>
-          <div class="span1">
-            <input type="text" />
-          </div>
-          <div class="span1">
-            <input type="text" />
-          </div>
-          <div class="span1">
-            <input type="text" />
-          </div>
-          <div class="span1">
-            <input type="text" />
-          </div>
-          <div class="span1">
-            <input type="text" />
-          </div>
-          <div class="span1">
-            <input type="text" />
-          </div>
-          <div class="span1">
-            <input type="text" />
-          </div>
-          <div class="span1">
-            <input type="text" />
-          </div>
-          <div class="span1">
-            <input type="text" />
-          </div>
-          <div class="span1">
-            <input type="text" />
-          </div>
-          <div class="span1">
-            <input type="text" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
+   </div>
 </body>
 </html>

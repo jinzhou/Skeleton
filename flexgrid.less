@@ -1,0 +1,70 @@
+/* Variables
+================================================== */
+@largeMonitorMinWidth: 1200px;
+@smallMonitorMaxWidth: @largeMonitorMinWidth - 1px;
+@smallMonitorMinWidth: 992px;
+@tabletMaxWidth: @smallMonitorMinWidth - 1px;
+@tabletMinWidth: 768px;
+@mobileMaxWidth: @tabletMinWidth - 1px;
+
+/* Functions
+================================================== */
+.col-size(@percent) {
+   -webkit-flex: 0 0 @percent;
+   -ms-flex: 0 0 @percent;
+   flex: 0 0 @percent;
+}
+
+.generate-col(@n, @i: 1) when (@i =< @n) {
+   @percent: (@i * 100% / @n);
+   .col-@{i} {
+      .col-size(@percent);
+   }
+   .generate-col(@n, (@i + 1));
+}
+
+.generate-sm(@n, @i: 1) when (@i =< @n) {
+   @percent: (@i * 100% / @n);
+   @media (min-width: @tabletMinWidth) {
+      .sm-@{i} {
+         .col-size(@percent);
+      }
+   }
+   .generate-sm(@n, (@i + 1));
+}
+
+.generate-md(@n, @i: 1) when (@i =< @n) {
+   @percent: (@i * 100% / @n);
+   @media (min-width: @smallMonitorMinWidth) {
+      .md-@{i} {
+         .col-size(@percent);
+      }
+   }
+   .generate-md(@n, (@i + 1));
+}
+
+.generate-lg(@n, @i: 1) when (@i =< @n) {
+   @percent: (@i * 100% / @n);
+   @media (min-width: @largeMonitorMinWidth) {
+      .lg-@{i} {
+         .col-size(@percent);
+      }
+   }
+   .generate-lg(@n, (@i + 1));
+}
+
+.generate-columns(@n) {
+   .generate-col(@n);
+   .generate-sm(@n);
+   .generate-md(@n);
+   .generate-lg(@n);
+}
+
+.generate-columns(12);
+
+/* Default Setup
+================================================== */
+.container                       { margin: 0 auto; }
+.row                             { display: flex; }
+.fluid-width                     { width: 100%; max-height: 100%; height: auto; }
+.fluid-height                    { height: 100%; max-width: 100%; width: auto; }
